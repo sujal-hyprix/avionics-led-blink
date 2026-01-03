@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_d9edf6c004b4a7ff14fe9ae7a92214ee" kind="dir">
+    <compoundname>firmware</compoundname>
+    <innerfile refid="led_8c">led.c</innerfile>
+    <innerfile refid="led_8h">led.h</innerfile>
+    <innerfile refid="main_8c">main.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="firmware/"/>
+  </compounddef>
+</doxygen>

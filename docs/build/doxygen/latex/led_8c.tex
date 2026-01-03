@@ -1,0 +1,88 @@
+\doxysection{firmware/led.c File Reference}
+\hypertarget{led_8c}{}\label{led_8c}\index{firmware/led.c@{firmware/led.c}}
+
+
+LED control implementation.  
+
+
+{\ttfamily \#include "{}led.\+h"{}}\newline
+{\ttfamily \#include $<$Arduino.\+h$>$}\newline
+Include dependency graph for led.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{led_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{led_8c_a42f1d862efe03779de375b09175f9300}{led\+\_\+init}} (uint8\+\_\+t pin)
+\begin{DoxyCompactList}\small\item\em Initialize LED hardware. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{led_8c_a801936b261245054eb570e040642818a}{led\+\_\+on}} (void)
+\begin{DoxyCompactList}\small\item\em Turn LED ON. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{led_8c_a429f05b7eac928971c19e37ddc7079be}{led\+\_\+off}} (void)
+\begin{DoxyCompactList}\small\item\em Turn LED OFF. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+LED control implementation. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{led_8c_a42f1d862efe03779de375b09175f9300}\label{led_8c_a42f1d862efe03779de375b09175f9300} 
+\index{led.c@{led.c}!led\_init@{led\_init}}
+\index{led\_init@{led\_init}!led.c@{led.c}}
+\doxysubsubsection{\texorpdfstring{led\_init()}{led\_init()}}
+{\footnotesize\ttfamily void led\+\_\+init (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin }\end{DoxyParamCaption})}
+
+
+
+Initialize LED hardware. 
+
+Initialize LED GPIO. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{led_8c_a42f1d862efe03779de375b09175f9300_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{led_8c_a429f05b7eac928971c19e37ddc7079be}\label{led_8c_a429f05b7eac928971c19e37ddc7079be} 
+\index{led.c@{led.c}!led\_off@{led\_off}}
+\index{led\_off@{led\_off}!led.c@{led.c}}
+\doxysubsubsection{\texorpdfstring{led\_off()}{led\_off()}}
+{\footnotesize\ttfamily void led\+\_\+off (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Turn LED OFF. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{led_8c_a429f05b7eac928971c19e37ddc7079be_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{led_8c_a801936b261245054eb570e040642818a}\label{led_8c_a801936b261245054eb570e040642818a} 
+\index{led.c@{led.c}!led\_on@{led\_on}}
+\index{led\_on@{led\_on}!led.c@{led.c}}
+\doxysubsubsection{\texorpdfstring{led\_on()}{led\_on()}}
+{\footnotesize\ttfamily void led\+\_\+on (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Turn LED ON. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{led_8c_a801936b261245054eb570e040642818a_icgraph}
+\end{center}
+\end{figure}

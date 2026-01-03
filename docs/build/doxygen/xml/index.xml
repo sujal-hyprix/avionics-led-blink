@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="led_8c" kind="file"><name>led.c</name>
+    <member refid="led_8c_1ac17c9f22b1164a2492169233044b032e" kind="variable"><name>led_pin</name></member>
+    <member refid="led_8c_1a42f1d862efe03779de375b09175f9300" kind="function"><name>led_init</name></member>
+    <member refid="led_8c_1a801936b261245054eb570e040642818a" kind="function"><name>led_on</name></member>
+    <member refid="led_8c_1a429f05b7eac928971c19e37ddc7079be" kind="function"><name>led_off</name></member>
+  </compound>
+  <compound refid="led_8h" kind="file"><name>led.h</name>
+    <member refid="led_8h_1a42f1d862efe03779de375b09175f9300" kind="function"><name>led_init</name></member>
+    <member refid="led_8h_1a801936b261245054eb570e040642818a" kind="function"><name>led_on</name></member>
+    <member refid="led_8h_1a429f05b7eac928971c19e37ddc7079be" kind="function"><name>led_off</name></member>
+  </compound>
+  <compound refid="main_8c" kind="file"><name>main.c</name>
+    <member refid="main_8c_1a7dfd9b79bc5a37d7df40207afbc5431f" kind="function"><name>setup</name></member>
+    <member refid="main_8c_1a0b33edabd7f1c4e4a0bf32c67269be2f" kind="function"><name>loop</name></member>
+  </compound>
+  <compound refid="dir_d9edf6c004b4a7ff14fe9ae7a92214ee" kind="dir"><name>firmware</name>
+  </compound>
+</doxygenindex>

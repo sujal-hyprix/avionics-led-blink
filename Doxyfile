@@ -1,0 +1,19 @@
+PROJECT_NAME           = "Arduino LED Demo"
+OUTPUT_DIRECTORY       = docs/build/doxygen
+
+INPUT                  = firmware
+RECURSIVE              = YES
+FILE_PATTERNS          = *.c *.h
+
+GENERATE_XML           = YES
+GENERATE_HTML          = NO
+
+WARN_IF_UNDOCUMENTED   = YES
+WARN_AS_ERROR          = YES
+
+EXTRACT_ALL            = YES
+OPTIMIZE_OUTPUT_FOR_C  = YES
+
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+HAVE_DOT               = YES

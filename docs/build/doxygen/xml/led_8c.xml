@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="led_8c" kind="file" language="C++">
+    <compoundname>led.c</compoundname>
+    <includes refid="led_8h" local="yes">led.h</includes>
+    <includes local="no">Arduino.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>firmware/led.c</label>
+        <link refid="led_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>led.h</label>
+        <link refid="led_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Arduino.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="led_8c_1ac17c9f22b1164a2492169233044b032e" prot="public" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t led_pin</definition>
+        <argsstring></argsstring>
+        <name>led_pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/led.c" line="9" column="16" bodyfile="firmware/led.c" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="led_8c_1a42f1d862efe03779de375b09175f9300" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void led_init</definition>
+        <argsstring>(uint8_t pin)</argsstring>
+        <name>led_init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+<para>Initialize LED hardware. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize LED GPIO. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/led.c" line="14" column="6" bodyfile="firmware/led.c" bodystart="14" bodyend="19"/>
+        <referencedby refid="main_8c_1a7dfd9b79bc5a37d7df40207afbc5431f" compoundref="main_8c" startline="12" endline="15">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="led_8c_1a801936b261245054eb570e040642818a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void led_on</definition>
+        <argsstring>(void)</argsstring>
+        <name>led_on</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Turn LED ON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/led.c" line="21" column="6" bodyfile="firmware/led.c" bodystart="21" bodyend="24"/>
+        <referencedby refid="main_8c_1a0b33edabd7f1c4e4a0bf32c67269be2f" compoundref="main_8c" startline="20" endline="26">loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="led_8c_1a429f05b7eac928971c19e37ddc7079be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void led_off</definition>
+        <argsstring>(void)</argsstring>
+        <name>led_off</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Turn LED OFF. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="firmware/led.c" line="26" column="6" bodyfile="firmware/led.c" bodystart="26" bodyend="29"/>
+        <referencedby refid="main_8c_1a0b33edabd7f1c4e4a0bf32c67269be2f" compoundref="main_8c" startline="20" endline="26">loop</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>LED control implementation. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="led_8h" kindref="compound">led.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/>led_pin;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="led_8c_1a42f1d862efe03779de375b09175f9300" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="led_8c_1a42f1d862efe03779de375b09175f9300" kindref="member">led_init</ref>(uint8_t<sp/>pin)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>led_pin<sp/>=<sp/>pin;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(led_pin,<sp/>OUTPUT);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(led_pin,<sp/>LOW);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="led_8c_1a801936b261245054eb570e040642818a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="led_8c_1a801936b261245054eb570e040642818a" kindref="member">led_on</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(led_pin,<sp/>HIGH);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="led_8c_1a429f05b7eac928971c19e37ddc7079be" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="led_8c_1a429f05b7eac928971c19e37ddc7079be" kindref="member">led_off</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(led_pin,<sp/>LOW);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="firmware/led.c"/>
+  </compounddef>
+</doxygen>
