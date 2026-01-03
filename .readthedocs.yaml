@@ -2,8 +2,14 @@ version: 2
 
 build:
   os: ubuntu-22.04
+  apt_packages:
+    - graphviz  
   tools:
     python: "3.10"
+  jobs:
+    pre_build:
+      - mkdir -p docs/build/doxygen
+      - doxygen Doxyfile
 
 python:
   install:
